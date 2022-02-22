@@ -1,0 +1,119 @@
+/* Home Grid 5/10/21 Updated 17/01/22 Cameron Lester*/
+.item1 { grid-area: header; justify-self: start ;}
+.item2 { grid-area: menu; background-color: #5ca1da;}
+.item4 { grid-area: right; ;}
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-template-columns: .5fr 2fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Image Spin 5/10/21 Cameron Lester*/
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@font-face {
+  font-family: ExpansivaBold;
+  src: url("Expansiva bold.otf") format("opentype");
+}
+
+/* Buttons with hover 5/10/21 Cameron Lester*/
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: ExpansivaBold
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #eb4034;
+}
+
+.button1:hover {
+  background-color: #eb4034;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f79d28;
+}
+
+.button2:hover {
+  background-color: #f79d28;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ebf227;
+}
+
+.button3:hover {
+  background-color: #ebf227;
+  color: white;
+}
+
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ed24d2;
+}
+
+.button4:hover {
+  background-color: #ed24d2;
+  color: white;
+}
+
+.button5 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #00b2ec;
+}
+
+.button5:hover {
+  background-color: #00b2ec;
+  color: white;
+}
+
+/* Background Images 17/01/22 Cameron Lester*/
+
+body {
+  background-image: url("JackBord_Block3_PCB_bk_Image_ver1c_20_Feb_2021_idx1.png");
+ }
